@@ -22,7 +22,12 @@
 ## Run the code
 環境
 Python 3.7.1
-
+```
+conda create -n test python==3.7
+```
+```
+activate test
+```
 安裝requirements.txt套件:
 ```
 conda install --yes --file requirements.txt
