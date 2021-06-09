@@ -14,15 +14,30 @@
 ![descriotions](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/data_de.jpg)
 
 ### Data Analysises
-->兩年冬季商品銷售量較高，表示資料具有季節性
-->從2013年至2015年，每月銷售數量有下降的趨勢
-->商品價格會影響商品銷售量
-->商店所在城市會影響商品銷售量(EX:大城市消費力較高)
+-> 兩年冬季商品銷售量較高，表示資料具有季節性
+
+-> 從2013年至2015年，每月銷售數量有下降的趨勢
+
+-> 商品價格會影響商品銷售量
+
+-> 商店所在城市會影響商品銷售量(EX:大城市消費力較高)
 
 ![trend](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/trend.jpg)
 
 
 ### Method
+
+- 清除outliers
+- 建立新的matrix作為商品與商店每月的train set
+- 得到商品月銷售額merge到matrix
+- 將商品名稱、商店名稱、商品類型merge到matrix
+- 增加與目標相關的lag features(EX:每月整體商品銷售量、平均銷售量、商店中的商品平均銷售量)
+- 增加城市地點作為特徵
+- 增加價格趨勢特徵(EX:各類型商品價格、商店總銷售額、平均銷售額)
+- 增加每月周末作為特徵
+- 增加前三個月相似商品銷售額作為特徵
+- 區分剛上市的商品與已上市的商品作為特徵(剛上市的商品無2015以前的歷史資料，而已上市商品有過去歷史資料提供時間序列的關係)
+- fit XGBoost model
 
 ### Result
 
