@@ -1,6 +1,6 @@
 # DSAI-Predict Future Sales
 ### [Predict Future Sales](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/overview)
-
+![pfs](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/pfs.JPG)
 ### Data Description
 You are provided with daily historical sales data. The task is to forecast the total amount of products sold in every shop for the test set. Note that the list of shops and products slightly changes every month. Creating a robust model that can handle such situations is part of the challenge.
 
