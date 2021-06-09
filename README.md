@@ -44,9 +44,11 @@
 
 無特別調整參數模型預測結果:
 
+![rmse1](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/rmse1.jpg)
 
 使用Grid Search CV 調整模型預測結果:
 
+![rmse2](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/rmse1.jpg)
 
 ### Run the code
 環境
