@@ -14,6 +14,13 @@
 ![descriotions](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/data_de.jpg)
 
 ### Data Analysises
+->兩年冬季商品銷售量較高，表示資料具有季節性
+->從2013年至2015年，每月銷售數量有下降的趨勢
+->商品價格會影響商品銷售量
+->商店所在城市會影響商品銷售量(EX:大城市消費力較高)
+
+![trend](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/trend.jpg)
+
 
 ### Method
 
