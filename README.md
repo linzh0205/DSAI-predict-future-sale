@@ -19,5 +19,24 @@
 
 ### Result
 
-### Run the code
-[Google PPT Link](https://drive.google.com/file/d/1RNj0FqVb39bEE_Ckr_pQysmtsf21fg75/view?usp=sharing)
+## Run the code
+環境
+Python 3.7.1
+
+安裝requirements.txt套件:
+```
+conda install --yes --file requirements.txt
+```
+將dataset.zip解壓縮與XGBmodel.py、feature.py存在同路徑下
+
+執行feature.py進行特徵擷取，會得到所有擷取後的特徵檔案data.pkl:
+```
+python feature.py
+```
+接著執行XGBmodel.py，得到submission.csv上傳至Kaggle
+```
+python XGBmodel.py
+```
+
+
+## [Google PPT Link](https://drive.google.com/file/d/1RNj0FqVb39bEE_Ckr_pQysmtsf21fg75/view?usp=sharing)
