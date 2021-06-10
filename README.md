@@ -35,15 +35,17 @@ You are provided with daily historical sales data. The task is to forecast the t
 - 增加與目標相關的lag features(EX:每月整體商品銷售量、平均銷售量、商店中的商品平均銷售量)
 - 增加城市地點作為特徵
 - 增加價格趨勢特徵(EX:各類型商品價格、商店總銷售額、平均銷售額)
-- 增加每月周末作為特徵
-- 增加前三個月相似商品銷售額作為特徵
+- 增加每月周末數作為特徵
+- 增加前幾個月相似商品銷售額作為特徵
 - 區分剛上市的商品與已上市的商品作為特徵(剛上市的商品無2015以前的歷史資料，而已上市商品有過去歷史資料提供時間序列的關係)
 - fit XGBoost model
-- 使用Grid Search CV 調整模型最佳參數
+- Grid Search CV自動調整參數XGBoost的參數(max_depth、n_estimators、 subsample 、colsamplebytree)
+
+
 
 ### Result
 
-無特別調整參數模型預測結果:
+無調整參數模型預測結果:
 
 ![rmse1](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/rmse1.jpg)
 
