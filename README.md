@@ -51,6 +51,8 @@ You are provided with daily historical sales data. The task is to forecast the t
 
 ![rmse2](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/rmse1.jpg)
 
+#### [Google PPT Link](https://drive.google.com/file/d/1RNj0FqVb39bEE_Ckr_pQysmtsf21fg75/view?usp=sharing)
+
 ### Run the code
 環境
 Python 3.7
@@ -70,7 +72,7 @@ pip install -r requirements.txt
 
 由於執行feature時間會較長，因此我們提供已經檔案的雲端連結給使用者下載
 
-### [new_train.pkl Download Link](https://drive.google.com/file/d/1e7qlZxrqyRaHBmJ2dhFXMwMSjIZTdctL/view?usp=sharing)
+#### [new_train.pkl Download Link](https://drive.google.com/file/d/1e7qlZxrqyRaHBmJ2dhFXMwMSjIZTdctL/view?usp=sharing)
 
 將下載後的檔案存到與XGBmodel.py的相同路徑下
 
@@ -80,4 +82,3 @@ python XGBmodel.py
 ```
 
 
-### [Google PPT Link](https://drive.google.com/file/d/1RNj0FqVb39bEE_Ckr_pQysmtsf21fg75/view?usp=sharing)
