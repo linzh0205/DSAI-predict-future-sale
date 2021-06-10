@@ -53,7 +53,7 @@ You are provided with daily historical sales data. The task is to forecast the t
 
 ### Run the code
 環境
-Python 3.7.1
+Python 3.7
 ```
 conda create -n test python==3.7
 ```
@@ -62,7 +62,7 @@ activate test
 ```
 安裝requirements.txt套件:
 ```
-conda install --yes --file requirements.txt
+pip install -r requirements.txt
 ```
 將dataset.zip解壓縮與XGBmodel.py、feature.py存在同路徑下
 
