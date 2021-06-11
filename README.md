@@ -28,6 +28,7 @@ You are provided with daily historical sales data. The task is to forecast the t
 
 ### Method
 
+## Preprocessing & Feature Selection
 - 清除outliers
 - 建立新的matrix作為商品與商店每月的train set
 - 得到商品月銷售額merge到matrix
@@ -38,9 +39,14 @@ You are provided with daily historical sales data. The task is to forecast the t
 - 增加每月周末數作為特徵
 - 增加前幾個月相似商品銷售額作為特徵
 - 區分剛上市的商品與已上市的商品作為特徵(剛上市的商品無2015以前的歷史資料，而已上市商品有過去歷史資料提供時間序列的關係)
+
+## Training model
+XGBoost
 - fit XGBoost model
 - Grid Search CV自動調整參數XGBoost的參數(max_depth、n_estimators、 subsample 、colsamplebytree)
 
+LSTM
+- Gfit LSTM model
 
 
 ### Result
