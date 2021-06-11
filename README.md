@@ -51,7 +51,7 @@ You are provided with daily historical sales data. The task is to forecast the t
 
 使用Grid Search CV 調整模型預測結果:
 
-![rmse2](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/rmse1.jpg)
+![rmse2](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/lstm_model_result.PNG)
 
 #### [Google PPT Link](https://drive.google.com/file/d/1RNj0FqVb39bEE_Ckr_pQysmtsf21fg75/view?usp=sharing)
 
