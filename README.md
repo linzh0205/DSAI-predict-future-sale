@@ -14,6 +14,7 @@ You are provided with daily historical sales data. The task is to forecast the t
 
 ![descriotions](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/data_de.jpg)
 
+
 ### Data Analysises
 -> 兩年冬季商品銷售量較高，表示資料具有季節性
 
@@ -24,6 +25,7 @@ You are provided with daily historical sales data. The task is to forecast the t
 -> 商店所在城市會影響商品銷售量(EX:大城市消費力較高)
 
 ![trend](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/trend.jpg)
+
 
 
 #### Method
