@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 接著執行XGBmodel.py，得到submission.csv上傳至Kaggle
 ```
-python XGBmodel.py
+python LSTMmodel.py
 ```
 
 
