@@ -87,4 +87,4 @@ model_lstm = load_model('model21.h5')
 pred = model_lstm.predict(X_test)
 
 submission = pd.DataFrame(pred,columns=['item_cnt_month'])
-submission.to_csv('lstm_submission_QQ.csv',index_label='ID')
+submission.to_csv('submission.csv',index_label='ID')
