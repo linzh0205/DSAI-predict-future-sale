@@ -80,17 +80,16 @@ activate test
 ```
 pip install -r requirements.txt
 ```
-將dataset.zip解壓縮與XGBmodel.py、feature.py存在同路徑下
-
-執行feature.py進行特徵擷取，會得到所有擷取後的特徵檔案new_train.pkl
-
-由於執行feature時間會較長，因此我們提供已經檔案的雲端連結給使用者下載
+- 下載dataset.zip、LSTMmodel.py、feature.py、model20.h5
+- 將dataset.zip解壓縮與LSTMmodel.py、feature.py、model20.h5存在同路徑下
+- 執行feature.py進行特徵擷取，會得到所有擷取後的特徵檔案new_train.pkl
+- 由於執行feature時間會較長，因此我們提供已經檔案的雲端連結給使用者下載
 
 #### [new_train.pkl Download Link](https://drive.google.com/file/d/1e7qlZxrqyRaHBmJ2dhFXMwMSjIZTdctL/view?usp=sharing)
 
-將下載後的檔案存到與XGBmodel.py的相同路徑下
+- 將下載後的檔案存到與LSTMmodel.py的相同路徑下
 
-接著執行XGBmodel.py，得到submission.csv上傳至Kaggle
+- 接著執行LSTMmodel.py，得到submission.csv上傳至Kaggle
 ```
 python LSTMmodel.py
 ```
