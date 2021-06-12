@@ -61,7 +61,7 @@ LSTM模型預測結果:
 
 使用Grid Search CV 調整模型預測結果:
 
-#### [Google PPT Link](https://drive.google.com/file/d/1RNj0FqVb39bEE_Ckr_pQysmtsf21fg75/view?usp=sharing)
+#### [Google PPT Link](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/0.91167.JPG)
 
 ### Run the code
 環境
