@@ -59,7 +59,7 @@ XGBoost無調整參數模型預測結果:
 
 LSTM模型預測結果:
 
-![rmse2](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/lstm_model_result_1.PNG)
+![rmse2](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/lstm_model_result_2.PNG)
 
 使用Grid Search CV 調整模型預測結果:
 
