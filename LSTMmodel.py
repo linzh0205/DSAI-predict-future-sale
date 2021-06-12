@@ -2,12 +2,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import pickle
-from keras.models import Sequential, load_model
-from keras.layers import LSTM, Dense, Activation, ThresholdedReLU, MaxPooling2D, Embedding, Dropout
-from keras.optimizers import Adam, SGD, RMSprop
-from keras import backend as K
+import tensorflow
+from tensorflow import keras
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.layers import LSTM, Dense, Activation, ThresholdedReLU, MaxPooling2D, Embedding, Dropout
+from tensorflow.keras.optimizers import Adam, SGD, RMSprop
+from tensorflow.keras import backend as K
 from sklearn.model_selection import train_test_split
-from keras.callbacks import EarlyStopping
+from tensorflow.keras.callbacks import EarlyStopping
 from sklearn.preprocessing import MinMaxScaler
 import gc
 
@@ -80,9 +82,9 @@ Y_valid=Y_valid.values.reshape((Y_valid.shape[0],1))
 X_test=X_test.values.reshape((X_test.shape[0],X_test.shape[1],1))
 
 K.clear_session()
-model_lstm = load_model('model20.h5')
+model_lstm = load_model('model21.h5')
 
 pred = model_lstm.predict(X_test)
 
 submission = pd.DataFrame(pred,columns=['item_cnt_month'])
-submission.to_csv('lstm_submission_1.csv',index_label='ID')
+submission.to_csv('lstm_submission_QQ.csv',index_label='ID')
