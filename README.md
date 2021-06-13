@@ -59,7 +59,7 @@ XGBoost無調整參數模型預測結果:
 
 使用Grid Search CV 調整模型預測結果:
 
-![rmse3](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/0.91025.JPG)
+![rmse3](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/0.90705.JPG)
 
 
 LSTM模型預測結果:
@@ -82,8 +82,8 @@ activate test
 ```
 pip install -r requirements.txt
 ```
-- 下載dataset.zip、Xgbl.py、feature.py、pima.pickle.dat
-- 將dataset.zip解壓縮後與Xgbl.py、feature.py、pima.pickle.dat存在同路徑下
+- 下載dataset.zip、Xgbl.py、feature.py、model.pickle.dat
+- 將dataset.zip解壓縮後與Xgbl.py、feature.py、model.pickle.dat存在同路徑下
 - 執行feature.py進行特徵擷取，會得到所有擷取後的特徵檔案new_train.pkl
 ## 由於執行feature時間會較長，因此我們提供已經檔案的雲端連結給使用者下載
 
