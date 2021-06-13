@@ -84,6 +84,9 @@ activate test
 pip install -r requirements.txt
 ```
 - 執行feature.py進行特徵擷取，會得到所有擷取後的特徵檔案new_train.pkl
+```
+python feature.py
+```
 ## 由於執行feature時間會較長，因此我們提供已經檔案的雲端連結給使用者下載
 
 #### [new_train.pkl Download Link](https://drive.google.com/file/d/1zHi3ElAZc9lNlDDLe2vlPW4aocoz2MiL/view?usp=sharing)
