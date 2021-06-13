@@ -60,7 +60,7 @@ X_test = data[data.date_block_num == 34].drop(['item_cnt_month'], axis=1)
 # modelr = XGBRegressor(max_depth=10,n_estimators=800,min_child_weight=300, 
 #                     colsample_bytree=0.8, subsample=0.8, eta=0.3,seed=40)
 
-loaded_model = pickle.load(open("model.pickle.dat", "rb"))
+loaded_model = pickle.load(open("model1.pickle.dat", "rb"))
 # Y_pred = loaded_model.predict(X_valid).clip(0, 20)
 Y_test = loaded_model.predict(X_test).clip(0, 20)
 # predictions = [round(value) for value in Y_test]
