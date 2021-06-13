@@ -327,4 +327,4 @@ cats = pd.read_csv('./datasets/item_categories.csv')
 train = pd.read_csv('./datasets/sales_train.csv')
 test  = pd.read_csv('./datasets/test.csv').set_index('ID')
 
-save_feature(train, items, cats, test)
+save_feature(train, items, shopscats, test)
