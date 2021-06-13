@@ -70,8 +70,8 @@ LSTM模型預測結果:
 #### [Google PPT Link](https://drive.google.com/file/d/1RNj0FqVb39bEE_Ckr_pQysmtsf21fg75/view?usp=sharing)
 
 ### Run the code
-- 下載dataset.zip、Xgbl.py、feature.py、model1.pickle.dat
-- 將dataset.zip解壓縮後與Xgbl.py、feature.py、model1.pickle.dat存在同路徑下
+- 下載dataset.zip、pred.py、feature.py、model1.pickle.dat
+- 將dataset.zip解壓縮後與pred.py、feature.py、model1.pickle.dat存在同路徑下
 - 創建新環境環境為Python 3.7
 ```
 conda create -n test python==3.7
@@ -91,11 +91,11 @@ python feature.py
 
 #### [new_train.pkl Download Link](https://drive.google.com/file/d/1zHi3ElAZc9lNlDDLe2vlPW4aocoz2MiL/view?usp=sharing)
 
-- 將下載後的檔案存到與Xgbl.py的相同路徑下
+- 將下載後的檔案存到與pred.py的相同路徑下
 
-- 接著執行Xgbl.py，得到submission.csv上傳至Kaggle
+- 接著執行pred.py，得到submission.csv上傳至Kaggle
 ```
-python Xgbl.py
+python pred.py
 ```
 
 
