@@ -11,7 +11,7 @@ You are provided with daily historical sales data. The task is to forecast the t
 - item_categories.csv  - supplemental information about the items categories.
 - shops.csv- supplemental information about the shops.
 
-![descriotions](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/data_de.jpg)
+![descriotions](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/data.jpg)
 
 
 ## Data Analysises
