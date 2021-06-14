@@ -52,8 +52,7 @@ XGBRegressor(max_depth=8, n_estimators=800, min_child_weight=400, colsample_bytr
 
 #### LSTM
 - Fit LSTM model
-
-LTMS Training result
+- LTMS Training result
 
 ![](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/lstm_model_training_plot.PNG)
 
