@@ -1,5 +1,5 @@
 # DSAI-Predict Future Sales
-### [Predict Future Sales](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/overview)
+## [Predict Future Sales](https://www.kaggle.com/c/competitive-data-science-predict-future-sales/overview)
 ![pfs](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/pfs.JPG)
 ### Data Description
 You are provided with daily historical sales data. The task is to forecast the total amount of products sold in every shop for the test set. Note that the list of shops and products slightly changes every month. Creating a robust model that can handle such situations is part of the challenge.
@@ -15,7 +15,7 @@ You are provided with daily historical sales data. The task is to forecast the t
 ![descriotions](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/data_de.jpg)
 
 
-### Data Analysises
+## Data Analysises
 -> 兩年冬季商品銷售量較高，表示資料具有季節性
 
 -> 從2013年至2015年，每月銷售數量有下降的趨勢
@@ -28,9 +28,9 @@ You are provided with daily historical sales data. The task is to forecast the t
 
 
 
-#### Method
+## Method
 
-## Preprocessing & Feature Selection
+### Preprocessing & Feature Selection
 - 清除outliers
 - 建立新的matrix作為商品與商店每月的train set
 - 得到商品月銷售額merge到matrix
@@ -42,8 +42,8 @@ You are provided with daily historical sales data. The task is to forecast the t
 - 增加前幾個月相似商品銷售額作為特徵
 - 區分剛上市的商品與已上市的商品作為特徵(剛上市的商品無2015以前的歷史資料，而已上市商品有過去歷史資料提供時間序列的關係)
 
-## Training model
-# XGBoost
+### Training model
+#### XGBoost
 - Fit XGBoost model
 - Grid Search CV自動調整參數XGBoost的參數(max_depth、n_estimators、min_child_weight、subsample 、colsamplebytree)
 - 
@@ -51,14 +51,14 @@ You are provided with daily historical sales data. The task is to forecast the t
 XGBRegressor(max_depth=8, n_estimators=800, min_child_weight=400, colsample_bytree=0.8, subsample=0.8, eta=0.04, seed=40, objective="reg:squarederror")
 ```
 
-# LSTM
+#### LSTM
 - Fit LSTM model
 
 LTMS Training result
 
 ![](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/lstm_model_training_plot.PNG)
 
-### Result
+## Result
 
 XGBoost無調整參數模型預測結果:
 
@@ -74,9 +74,9 @@ LSTM模型預測結果:
 ![rmse2](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/lstm_model_result_2.PNG)
 
 
-#### [Google PPT Link](https://drive.google.com/file/d/1RNj0FqVb39bEE_Ckr_pQysmtsf21fg75/view?usp=sharing)
+## [Google PPT Link](https://drive.google.com/file/d/1RNj0FqVb39bEE_Ckr_pQysmtsf21fg75/view?usp=sharing)
 
-### Run the code
+## Run the code
 - 下載dataset.zip、pred.py、feature.py、model1.pickle.dat
 - 將dataset.zip解壓縮後與pred.py、feature.py、model1.pickle.dat存在同路徑下
 - 創建新環境環境為Python 3.7
@@ -94,9 +94,9 @@ pip install -r requirements.txt
 ```
 python feature.py
 ```
-## 由於執行feature時間會較長，因此我們提供已經檔案的雲端連結給使用者下載
+### 由於執行feature時間會較長，因此我們提供已經檔案的雲端連結給使用者下載
 
-#### [new_train.pkl Download Link](https://drive.google.com/file/d/1zHi3ElAZc9lNlDDLe2vlPW4aocoz2MiL/view?usp=sharing)
+## [new_train.pkl Download Link](https://drive.google.com/file/d/1zHi3ElAZc9lNlDDLe2vlPW4aocoz2MiL/view?usp=sharing)
 
 - 將下載後的檔案存到與pred.py的相同路徑下
 
