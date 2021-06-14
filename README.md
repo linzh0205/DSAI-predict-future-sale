@@ -49,7 +49,9 @@ XGBoost
 
 LSTM
 - fit LSTM model
+LTMS Training result
 
+![](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/lstm_model_training_plot.PNG)
 
 ### Result
 
