@@ -43,12 +43,17 @@ You are provided with daily historical sales data. The task is to forecast the t
 - 區分剛上市的商品與已上市的商品作為特徵(剛上市的商品無2015以前的歷史資料，而已上市商品有過去歷史資料提供時間序列的關係)
 
 ## Training model
-XGBoost
-- fit XGBoost model
-- Grid Search CV自動調整參數XGBoost的參數(max_depth、n_estimators、 subsample 、colsamplebytree)
+# XGBoost
+- Fit XGBoost model
+- Grid Search CV自動調整參數XGBoost的參數(max_depth、n_estimators、min_child_weight、subsample 、colsamplebytree)
+- 
+```
+XGBRegressor(max_depth=8, n_estimators=800, min_child_weight=400, colsample_bytree=0.8, subsample=0.8, eta=0.04, seed=40, objective="reg:squarederror")
+```
 
-LSTM
-- fit LSTM model
+# LSTM
+- Fit LSTM model
+
 LTMS Training result
 
 ![](https://github.com/linzh0205/DSAI-predict-future-sale/blob/main/fig/lstm_model_training_plot.PNG)
