@@ -69,9 +69,12 @@ model.fit(X_train, Y_train, eval_metric="rmse", eval_set=[(X_train, Y_train), (X
         verbose=True, early_stopping_rounds = 20)
 
 # save model
-pickle.dump(model, open("model1.pickle.dat", "wb"))
+# pickle.dump(model, open("model1.pickle.dat", "wb"))
 
-# save predictions for an ensemble
-# pickle.dump(Y_pred, open('xgb_train.pickle', 'wb'))
-# pickle.dump(Y_test, open('xgb_test.pickle', 'wb'))
-# plot_features(model, (10,14))
+Y_test = model.predict(X_test).clip(0, 20)
+print(Y_test)
+submission = pd.DataFrame({
+    "ID": test.index, 
+    "item_cnt_month": Y_test
+})
+submission.to_csv('submission.csv', index=False)
